@@ -3,17 +3,14 @@ import { Container, Row, Col} from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../Assets/img/mariposa.png'
 import { useState } from 'react';
-import { useTranslation } from "react-i18next";
 
 
 
 export const Banner = () => {
 
-    const [t, i18n] = useTranslation("global");
-
   const [loopNum, setLoopNum] = React.useState(0);
   const [isDeleting, setIsDeleting] = React.useState(false);
-  const toRotate = [ t("banner.rotation-1"), t("banner.rotation-2"), t("banner.rotation-3"), t("banner.rotation-4") ];
+  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const [text, setText] = useState('');
   const period = 2000;
   const [delta, setDelta] = React.useState(300 - Math.random() * 100);
@@ -129,7 +126,25 @@ const determinePointQuantity = distance => Math.max(
   1
 );
 
+/* --  
 
+The following is an explanation for the "createGlow" function below:
+
+I didn't cover this in my video, but I ran into an issue where moving the mouse really quickly caused gaps in the glow effect. Kind of like this:
+
+*   *       *       *    *      *    🖱️
+
+instead of:
+
+*************************************🖱️
+
+To solve this I sort of "backfilled" some additional glow points by evenly spacing them in between the current point and the last one. I found this approach to be more visually pleasing than one glow point spanning the whole gap.
+
+The "quantity" of points is based on the config property "maximumGlowPointSpacing".
+
+My best explanation for why this is happening is due to the mousemove event only firing every so often. I also don't think this fix was totally necessary, but it annoyed me that it was happening so I took on the challenge of trying to fix it.
+
+-- */
 const createGlow = (last, current) => {
   const distance = calcDistance(last, current),
         quantity = determinePointQuantity(distance);
@@ -190,11 +205,10 @@ document.body.onmouseleave = () => updateLastMousePosition(originPosition);
         <Container>
             <Row className = "aling-items-center">
                 <Col xs = {12} md = {7} xl = {7}  >
-                    <span className='tagLine'>{t("banner.welcome")}</span>
-                    <h1>{t("banner.presentation")} <span className='wrap'>{text}</span></h1>
-                    <p>{t("banner.description")}</p>
-                    <a href='https://www.linkedin.com/in/melissa-iman-noriega-118a95228/' target='_blank'><button >{t("banner.contact")}<ArrowRightCircle size={25} className='logo-button'/></button></a>
-                    
+                    <span className='tagLine'> Welcome to my portfolio </span>
+                    <h1>{`Hi! I'm Melissa`} <span className='wrap'>{text}</span></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </Col>
 
                 <Col xs = {12} md = {5} xl = {5}>

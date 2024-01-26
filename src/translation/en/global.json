@@ -1,0 +1,31 @@
+{
+    "navbar": {
+        "home": "Home",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact":"Contact"
+    },
+    "banner":{
+        "welcome": "Welcome to my portfolio",
+        "presentation": "Hi, I'm Melissa",
+        "rotation-1": "Web Developer",
+        "rotation-2": "Web Designer",
+        "rotation-3": "UX/UI Designer",
+        "rotation-4": "Frontend Developer",
+        "description": "I am currently in the third year of my Computer Science degree, and I love to continuously learn new technologies and collaborate on projects that allow me to grow professionally.",
+        "contact": "Contact Me"
+
+    },
+    "projects":{
+        "projects": "Projects",
+        "description": "Here are some of the projects I've worked on, collaborating with startups and university groups",
+        "water-quality-description": "Water quality data is displayed using charts with chart.js, the project is built with React, and the backend connects via websockets.",
+        "consulta-ya": "Consulta Ya is a startup that helps doctors find office rentals. It was developed using HTML, CSS, and Bootstrap.",
+        "cepre-smart": "Cepre Smart is a pre-university education startup. It was developed using HTML, CSS, and Bootstrap.",
+        "skin-glow": "Layout of the Aruma brand's website, where you can view their information, products, and contact zone. It was developed using HTML and CSS."
+    },
+    "experience":{
+        "experience": "Experience",
+        "description":"I have had the opportunity to work with various technologies. Here are the most representative ones."
+    }
+}

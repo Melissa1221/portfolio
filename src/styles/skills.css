@@ -1,0 +1,35 @@
+
+.skill {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .skill-bx {
+    display: flex;
+    flex-direction: column;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+  }
+  .item{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+  .row{
+    display: flex;
+
+  }
+
+  .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }

@@ -1,0 +1,31 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "contact":"contáctame"
+    },
+    "banner":{
+        "welcome": "Bienvenid@ a mi portafolio",
+        "presentation": "Hola, soy Melissa",
+        "rotation-1": "Desarrolladora Web",
+        "rotation-2": "Diseñadora web",
+        "rotation-3": "Diseñadora UX/UI",
+        "rotation-4": "Desarrolladora Frontend",
+        "description": "Me encuentro en el tercer año de la carrera de Ciencia de la Computación, me encanta mantenerme aprendiendo nuevas tecnologías y colaborar en proyectos que me permitan crecer profesionalmente.",
+        "contact": "Contáctame"
+
+    },
+    "projects":{
+        "projects": "Proyectos",
+        "description": "Estos son algunos de los proyectos en los que he trabajado, colaborando con startups y agrupaciones de mi universidad",
+        "water-quality-description": "Se muestran datos de calidad de agua mediante gráficas con chart.js, el projecto está realizado con React y el backend se conecta mediante websockets.",
+        "consulta-ya": "Consulta Ya es una startup que ayuda a médicos para encontrar alquileres de consultorios. Se trabajó con HTML, CSS, y Bootstrap.",
+        "cepre-smart": "Cepre Smart es una startup enfocada en la educación preuniversitaria. Se trabajó con HTML, CSS, y Bootstrap.",
+        "skin-glow": "Maquetado de la página web de la marca Aruma en la que se puede ver su información, productos, y zona de contacto. Se trabajó con HTML y CSS."
+    },
+    "experience":{
+        "experience": "Experiencia",
+        "description":"He podido experimentar con diversas tecnologías, aquí están las más representativas"
+    }
+}

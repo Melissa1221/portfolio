@@ -1,0 +1,38 @@
+
+.App{
+    
+}
+.banner .logo-button{
+  margin-left: 1rem;
+
+}
+.banner .logo-button:hover{
+  background-color: black;
+  color: #fff;
+  border-radius: 1rem;
+  border-color: black;
+}
+.banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../Assets/img/headerImg.jpg');
+    background-color: #fff;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  
+.banner .tagLine {
+    font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  }
+

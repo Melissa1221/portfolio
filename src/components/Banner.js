@@ -16,7 +16,7 @@ export const Banner = () => {
   const toRotate = [ t("banner.rotation-1"), t("banner.rotation-2"), t("banner.rotation-3"), t("banner.rotation-4") ];
   const [text, setText] = useState('');
   const period = 2000;
-  const [delta, setDelta] = React.useState(300 - Math.random() * 100);
+  const [delta, setDelta] = React.useState(300 - Math.random() * 200);
 
   
   useEffect (( ) => {
@@ -105,7 +105,7 @@ const createStar = position => {
   star.style.textShadow = `0px 0px 1.5rem rgb(${color} / 0.5)`;
   star.style.animationName = config.animations[count++ % 3];
   star.style.starAnimationDuration = ms(config.starAnimationDuration);
-  
+
   appendElement(star);
 
   removeElement(star, config.starAnimationDuration);
@@ -160,7 +160,9 @@ const adjustLastMousePosition = position => {
 };
 
 const handleOnMove = e => {
-  const mousePosition = { x: e.clientX, y: e.clientY }
+  const mousePosition = { 
+    x: e.clientX + window.scrollX,
+    y: e.clientY + window.scrollY}
   
   adjustLastMousePosition(mousePosition);
   

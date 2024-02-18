@@ -87,8 +87,11 @@
 .colCard :hover{
     transform: scale(1.1);
     transition: 0.5s;
-    cursor: pointer;
     
+    
+}
+.projects img:hover{
+    cursor: pointer;
 }
 
 @keyframes show {
@@ -110,5 +113,4 @@
     animation-name: show;
 
     animation-range: entry 0.25 cover 0.3;
-    
 }

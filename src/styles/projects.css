@@ -1,8 +1,8 @@
 .projects .col{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem;
@@ -21,11 +21,12 @@
 }
 .projects .row{
     display: flex;
-    width: 100%;
+    width: 100;
     margin: 0 auto;
 }
 .colCard{
     display: flex;
+    flex-direction: column;
     
 }
 .projects {
@@ -48,20 +49,37 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px auto 30px auto;
-    text-align: center;
+    text-align: left;
     width: 56%;
   }
 
 .proj-imgbx{
-    width: 100%;
+    width: 60%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 1rem;
+    align-items:center;
+    justify-content: center;
     
 }
 .proj-imgbx img{
     width: 100%;
     height: auto;
+}
+.proj-imgbx a{
+    padding: 3rem;
+    width: 30rem;
+    height: auto;
+    border-right: 1px solid #333;
+
+}
+.proj-txtx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 3rem;
     
 
 }
@@ -69,6 +87,28 @@
 .colCard :hover{
     transform: scale(1.1);
     transition: 0.5s;
+    cursor: pointer;
     
 }
 
+@keyframes show {
+    from{
+        opacity: 0;
+        transform: scale(0.25);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.projects img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 0.25 cover 0.3;
+    
+}

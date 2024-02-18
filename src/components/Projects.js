@@ -1,10 +1,10 @@
 import { Row, Col} from "react-bootstrap";
 import { ProjectCard } from './ProjectCard'
 
-import waterQuality from '../Assets/img/waterQuality-portfolio.png'
-import consultaYa from '../Assets/img/consultaYa-portfolio.png'
-import cepreSmart from '../Assets/img/cepreSmart-portfolio.png'
-import skinGlow from '../Assets/img/skinGlow-portfolio.png'
+import waterQuality from '../Assets/img/CIRCULAR.png'
+import consultaYa from '../Assets/img/LOGO_ConsultaYa-removebg-preview.png'
+import cepreSmart from '../Assets/img/logoCepreSmart.png'
+import skinGlow from '../Assets/img/aruma-logo.png'
 import { useTranslation } from "react-i18next";
 export const Projects = () =>{
 

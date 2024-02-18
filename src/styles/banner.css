@@ -17,12 +17,20 @@
     padding: 260px 0 100px 0;
     background-image: url('../Assets/img/headerImg.jpg');
     background-color: #fff;
-    background-position: top center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-  }
+    text-align: left;
+    justify-content: center;
+    align-items: center; 
+}
 
+Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
   
 .banner .tagLine {
     font-weight: 700;
@@ -34,5 +42,6 @@
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  justify-content: center;
   }
 

@@ -192,7 +192,9 @@ document.body.onmouseleave = () => updateLastMousePosition(originPosition);
                 <Col xs = {12} md = {7} xl = {7}  >
                     <span className='tagLine'>{t("banner.welcome")}</span>
                     <h1>{t("banner.presentation")} <span className='wrap'>{text}</span></h1>
-                    <p>{t("banner.description")}</p>
+                    <p>{t("banner.description-1")}</p>
+                    <p>{t("banner.description-2")}</p>
+                    <p>{t("banner.description-3")}</p>
                     <a href='https://www.linkedin.com/in/melissa-iman-noriega-118a95228/' target='_blank'><button >{t("banner.contact")}<ArrowRightCircle size={25} className='logo-button'/></button></a>
                     
                 </Col>

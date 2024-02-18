@@ -7,6 +7,7 @@ import react from '../Assets/img/icons/react.svg'
 import js from '../Assets/img/icons/js.svg'
 import git from '../Assets/img/icons/git.svg'
 import figma from '../Assets/img/icons/figma.svg'
+import typescript from '../Assets/img/icons/typescript.svg'
 import { useTranslation } from "react-i18next";
 import { Row, Col } from 'react-bootstrap';
 
@@ -41,6 +42,7 @@ export const Experience = () => {
                     <div className="skill-bx">
                         <h2>{t("experience.experience")}</h2>
                         <p>{t("experience.description")}</p>
+                        
                         <Row className='row'>
                           <Col  className="col">
                           <div className="item">
@@ -59,19 +61,22 @@ export const Experience = () => {
                             </Col>
                             <Col className="col">
                             <div className="item">
-                                <img src={js} alt="Image" />
+                                <img src={typescript} alt="Image" />
                             </div>
                             </Col>
                             <Col className="col">
                             <div className="item">
-                                <img src={figma} alt="Image" />
+                                <img src={js} alt="Image" />
                             </div>
                             </Col>
+                            
                             <Col className="col">
                             <div className="item">
                                 <img src={git} alt="Image" />
                             </div>
                             </Col>
+
+                          
      
                         </Row>
                         

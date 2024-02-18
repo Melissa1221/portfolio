@@ -1,0 +1,17 @@
+
+  @media (max-width: 450px) {
+    .banner .tagline{
+        align-items: center;
+        justify-content: center;
+
+    }
+    .aling-items-center {
+        padding: 1.5rem;
+    }
+ 
+
+  }
+  
+
+
+  

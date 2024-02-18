@@ -3,6 +3,7 @@ import './styles/banner.css';
 import './styles/skills.css';
 import './styles/projects.css';
 import './styles/about.css';
+import './styles/responsive.css';
 import { Banner } from './components/Banner';
 import { NavBar } from './components/NavBar';
 

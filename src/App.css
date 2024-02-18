@@ -30,7 +30,8 @@ body{
   overflow-x: hidden;
   font-weight: 400;
   position: relative;
-  background-color: #fff !important;
+  background-color:  #fff !important;
+
   color: #121212 !important;
 }
 
@@ -50,7 +51,11 @@ a:hover {
   text-decoration: none;
 }
 
-
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: .5px;
+}
 
 button {
   border: 0;

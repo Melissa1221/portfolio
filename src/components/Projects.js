@@ -5,12 +5,19 @@ import waterQuality from '../Assets/img/CIRCULAR.png'
 import consultaYa from '../Assets/img/LOGO_ConsultaYa-removebg-preview.png'
 import cepreSmart from '../Assets/img/logoCepreSmart.png'
 import skinGlow from '../Assets/img/aruma-logo.png'
+import warmiVentures from '../Assets/img/warmi-ventures.png'
 import { useTranslation } from "react-i18next";
 export const Projects = () =>{
 
     const [t] = useTranslation("global");
 
     const projects = [
+        {
+            title: 'Warmi Ventures',
+            description: t("projects.warmi-ventures-description"),
+            img: warmiVentures,
+            link: 'https://master--warmiventures.netlify.app',
+        },
         {
             title: 'Water Quality',
             description: t("projects.water-quality-description"),

@@ -21,6 +21,7 @@
     },
     "projects":{
         "projects": "Proyectos",
+        "warmi-ventures-description":"Warmi Ventures es una incubadora de startups que ayuda a emprendedoras a desarrollar sus ideas. Se trabajó con Astro y React.",
         "description": "Estos son algunos de los proyectos en los que he trabajado, colaborando con startups y agrupaciones de mi universidad",
         "water-quality-description": "Se muestran datos de calidad de agua mediante gráficas con chart.js, el projecto está realizado con React y el backend se conecta mediante websockets.",
         "consulta-ya": "Consulta Ya es una startup que ayuda a médicos para encontrar alquileres de consultorios. Se trabajó con HTML, CSS, y Bootstrap.",

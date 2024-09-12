@@ -21,6 +21,7 @@
     },
     "projects":{
         "projects": "Projects",
+        "warmi-ventures-description":"Warmi Ventures is a startup incubator that helps entrepreneurs develop their ideas. It was worked with Astro and React.",
         "description": "Here are some of the projects I've worked on, collaborating with startups and groups from my university",
         "water-quality-description": "Water quality data is displayed using charts with chart.js, the project is done with React and the backend is connected via websockets.",
         "consulta-ya": "Consulta Ya is a startup that helps doctors find consulting room rentals. It was worked with HTML, CSS, and Bootstrap.",

@@ -26,7 +26,8 @@
         "water-quality-description": "Water quality data is displayed using charts with chart.js, the project is done with React and the backend is connected via websockets.",
         "consulta-ya": "Consulta Ya is a startup that helps doctors find consulting room rentals. It was worked with HTML, CSS, and Bootstrap.",
         "cepre-smart": "Cepre Smart is a startup focused on pre-university education. It was worked with HTML, CSS, and Bootstrap.",
-        "skin-glow": "Layout of the Aruma brand website where you can see its information, products, and contact area. It was worked with HTML and CSS."
+        "skin-glow": "Layout of the Aruma brand website where you can see its information, products, and contact area. It was worked with HTML and CSS.",
+        "ecommerce-description": "E-commerce platform built with React featuring shopping cart functionality, product filtering, search capabilities, and responsive design."
     },
     "experience":{
         "experience": "Experience",

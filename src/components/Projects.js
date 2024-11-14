@@ -9,42 +9,43 @@ import consultaYa from '../Assets/img/LOGO_ConsultaYa-removebg-preview.png';
 import cepreSmart from '../Assets/img/logoCepreSmart.png';
 import skinGlow from '../Assets/img/aruma-logo.png';
 import warmiVentures from '../Assets/img/warmi-ventures.png';
+import ecommerce from '../Assets/img/ecommerce.png';
 
 export const Projects = () => {
   const [t] = useTranslation("global");
 
   const projectsData = [
     {
-      id: 1,
+      title: 'Ecommerce',
+      description: t("projects.ecommerce-description"),
+      imgUrl: ecommerce,
+      link: 'https://ecommerce-melissa.netlify.app'
+    },
+    {
       title: 'Warmi Ventures',
       description: t("projects.warmi-ventures-description"),
       imgUrl: warmiVentures,
       link: 'https://warmiventures.netlify.app'
-    //   link: 'https://master--warmiventures.netlify.app',
     },
     {
-      id: 2,
       title: 'Water Quality',
       description: t("projects.water-quality-description"),
       imgUrl: waterQuality,
       link: 'https://water-quality-five.vercel.app/#GraficaTemp',
     },
     {
-      id: 3,
       title: 'MVP Consulta Ya',
       description: t("projects.consulta-ya"),
       imgUrl: consultaYa,
       link: 'https://consultaya.vercel.app',
     },
     {
-      id: 4,
       title: 'MVP Cepre Smart',
       description: t("projects.cepre-smart"),
       imgUrl: cepreSmart,
       link: 'https://cepresmart.vercel.app',
     },
     {
-      id: 5,
       title: 'Aruma',
       description: t("projects.skin-glow"),
       imgUrl: skinGlow,
@@ -59,8 +60,8 @@ export const Projects = () => {
         <p className="text-center mb-5">{t("projects.description")}</p>
         
         <Row>
-          {projectsData.map((project) => (
-            <Col key={project.id} xs={12} sm={6} lg={4} className="mb-4">
+          {projectsData.map((project, index) => (
+            <Col key={index} xs={12} sm={6} lg={4} className="mb-4">
               <ProjectCard
                 title={project.title}
                 description={project.description}

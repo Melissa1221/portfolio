@@ -19,7 +19,7 @@ export const Projects = () => {
       title: 'Warmi Ventures',
       description: t("projects.warmi-ventures-description"),
       imgUrl: warmiVentures,
-      link: ''
+      link: 'https://warmiventures.netlify.app'
     //   link: 'https://master--warmiventures.netlify.app',
     },
     {

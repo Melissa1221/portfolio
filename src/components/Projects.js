@@ -5,16 +5,23 @@ import { ProjectCard } from './ProjectCard';
 
 // Importaciones de imágenes
 import waterQuality from '../Assets/img/CIRCULAR.png';
-import consultaYa from '../Assets/img/LOGO_ConsultaYa-removebg-preview.png';
+// import consultaYa from '../Assets/img/LOGO_ConsultaYa-removebg-preview.png';
 import cepreSmart from '../Assets/img/logoCepreSmart.png';
 import skinGlow from '../Assets/img/aruma-logo.png';
 import warmiVentures from '../Assets/img/warmi-ventures.png';
 import ecommerce from '../Assets/img/ecommerce.png';
+import infojobs from '../Assets/img/infojobs.svg';
 
 export const Projects = () => {
   const [t] = useTranslation("global");
 
   const projectsData = [
+    {
+      title: 'Infojobs',
+      description: t("projects.infojobs"),
+      imgUrl: infojobs,
+      link: 'https://landing-infojobs.vercel.app'
+    },
     {
       title: 'Ecommerce',
       description: t("projects.ecommerce-description"),
@@ -32,12 +39,6 @@ export const Projects = () => {
       description: t("projects.water-quality-description"),
       imgUrl: waterQuality,
       link: 'https://water-quality-five.vercel.app/#GraficaTemp',
-    },
-    {
-      title: 'MVP Consulta Ya',
-      description: t("projects.consulta-ya"),
-      imgUrl: consultaYa,
-      link: 'https://consultaya.vercel.app',
     },
     {
       title: 'MVP Cepre Smart',

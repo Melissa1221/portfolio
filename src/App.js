@@ -11,8 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { useTranslation } from "react-i18next";
-import { About } from './components/About';
+
 import { Footer } from './components/Footer';
 
 

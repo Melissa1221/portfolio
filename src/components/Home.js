@@ -58,13 +58,13 @@ const last = {
 }
 
 const config = {
-  starAnimationDuration: 1500,
-  minimumTimeBetweenStars: 250,
-  minimumDistanceBetweenStars: 75,
-  glowDuration: 75,
-  maximumGlowPointSpacing: 10,
+  starAnimationDuration: 1000,
+  minimumTimeBetweenStars: 50,
+  minimumDistanceBetweenStars: 25,
+  glowDuration: 100,
+  maximumGlowPointSpacing: 5,
   colors: ["249 146 253", "252 254 255"],
-  sizes: ["1.4rem", "1rem", "0.6rem"],
+  sizes: ["1.2rem", "0.8rem", "0.4rem"],
   animations: ["fall-1", "fall-2", "fall-3"]
 }
 
@@ -179,26 +179,39 @@ const handleOnMove = e => {
   
   adjustLastMousePosition(mousePosition);
   
-  const now = new Date().getTime(),
-        hasMovedFarEnough = calcDistance(last.starPosition, mousePosition) >= config.minimumDistanceBetweenStars,
-        hasBeenLongEnough = calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
+  const now = new Date().getTime();
+  const hasMovedFarEnough = calcDistance(last.starPosition, mousePosition) >= config.minimumDistanceBetweenStars;
+  const hasBeenLongEnough = calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
   
   if(hasMovedFarEnough || hasBeenLongEnough) {
-    createStar(mousePosition);
-    
-    updateLastStar(mousePosition);
+    requestAnimationFrame(() => {
+      createStar(mousePosition);
+      updateLastStar(mousePosition);
+    });
   }
   
-  createGlow(last.mousePosition, mousePosition);
+  requestAnimationFrame(() => {
+    createGlow(last.mousePosition, mousePosition);
+  });
   
   updateLastMousePosition(mousePosition);
 }
 
-window.onmousemove = e => handleOnMove(e);
+useEffect(() => {
+  const handleMouseMove = e => handleOnMove(e);
+  const handleTouchMove = e => handleOnMove(e.touches[0]);
+  const handleMouseLeave = () => updateLastMousePosition(originPosition);
 
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+  window.addEventListener('mousemove', handleMouseMove);
+  window.addEventListener('touchmove', handleTouchMove);
+  document.body.addEventListener('mouseleave', handleMouseLeave);
 
-document.body.onmouseleave = () => updateLastMousePosition(originPosition);
+  return () => {
+    window.removeEventListener('mousemove', handleMouseMove);
+    window.removeEventListener('touchmove', handleTouchMove);
+    document.body.removeEventListener('mouseleave', handleMouseLeave);
+  };
+}, []);
 
   return (
     <section className='banner' id='home'>

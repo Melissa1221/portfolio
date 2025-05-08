@@ -55,7 +55,7 @@ export const NavBar = () => {
                 <a href='https://www.instagram.com/melissa0607_/' target="_blank" rel='noreferrer'><img src={instagram} alt='' /></a>
             </div>
             <a href='https://www.linkedin.com/in/melissa-iman-noriega-118a95228/' target='_blank' rel='noreferrer'><button className='vvd' ><span>{t("navbar.contact")}</span></button></a>
-            <a href='https://drive.google.com/file/d/1AEiLZezGD5NbdlumwQefd2nVedYGuyD2/view?usp=sharing' target='_blank'rel='noreferrer' ><button className='vvd' ><span>CV</span></button></a>
+            <a href='https://drive.google.com/file/d/1TnQ017B43Y0Q6J7iablDoFatSy5_XtBZ/view?usp=sharing' target='_blank'rel='noreferrer' ><button className='vvd' ><span>CV</span></button></a>
             <div className="lenguages">
               <button className='vvd' onClick={() => i18n.changeLanguage("es")} >es</button>
               <button className='vvd' onClick={() => i18n.changeLanguage("en")} >en</button>

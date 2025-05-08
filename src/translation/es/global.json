@@ -28,7 +28,9 @@
         "cepre-smart": "Cepre Smart es una startup enfocada en la educación preuniversitaria. Se trabajó con HTML, CSS, y Bootstrap.",
         "skin-glow": "Maquetado de la página web de la marca Aruma en la que se puede ver su información, productos, y zona de contacto. Se trabajó con HTML y CSS.",
         "ecommerce-description": "Plataforma de comercio electrónico construida con React que incluye funcionalidad de carrito de compras, filtrado de productos, capacidades de búsqueda y diseño responsive.",
-        "infojobs": "Landing page para Infojobs, el portal de empleo más reconocido en Europa. Desarrollado con Astro y Tailwind CSS."
+        "infojobs": "Landing page para Infojobs, el portal de empleo más reconocido en Europa. Desarrollado con Astro y Tailwind CSS.",
+        "acecom": "Acecom es una asociación de estudiantes de la Facultad de Ciencias de la Universidad Nacional de Ingeniería, se trabajó con Remix",
+        "genera": "Genera materiales educativos de alta calidad con la ayuda de inteligencia artificial, se utilizó NextJS"
     },
     "experience":{
         "experience": "Experiencia",

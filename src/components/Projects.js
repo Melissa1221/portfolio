@@ -11,6 +11,7 @@ import skinGlow from '../Assets/img/aruma-logo.png';
 import warmiVentures from '../Assets/img/warmi-ventures.png';
 import ecommerce from '../Assets/img/ecommerce.png';
 import infojobs from '../Assets/img/infojobs.svg';
+import genera from '../Assets/img/genera-logo.webp';
 
 export const Projects = () => {
   const [t] = useTranslation("global");
@@ -35,10 +36,10 @@ export const Projects = () => {
       link: 'https://warmiventures.netlify.app'
     },
     {
-      title: 'Water Quality',
-      description: t("projects.water-quality-description"),
-      imgUrl: waterQuality,
-      link: 'https://water-quality-five.vercel.app/#GraficaTemp',
+      title: 'Genera',
+      description: t("projects.genera"),
+      imgUrl: genera,
+      link: 'https://client-genera-production-af3b.up.railway.app/',
     },
     {
       title: 'MVP Cepre Smart',
@@ -47,10 +48,10 @@ export const Projects = () => {
       link: 'https://cepresmart.vercel.app',
     },
     {
-      title: 'Aruma',
-      description: t("projects.skin-glow"),
-      imgUrl: skinGlow,
-      link: 'https://melissa1221.github.io/PagWebFront.github.io/'
+      title: 'Acecom',
+      description: t("projects.acecom"),
+      imgUrl: waterQuality,
+      link: 'https://acecom.dev'
     }
   ];
 
